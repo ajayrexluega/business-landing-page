@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Black Sea</title>
+    <meta charset="utf-8">
+    <link rel='shortcut icon' href='stumbleupon.png' type='image/x-icon'/ >
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <!-- font -->
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700,300' rel='stylesheet' type='text/css'>
+  </head>
+  <body>
+
+    <header>
+      <div class="wrapper">
+          <a href=""><h1>Black Sea</h1></a>
+          <div id="menu-button">
+              <h4>Menu-button</h4>
+          </div>
+          <nav>
+            <ul>
+              <li><a href="#">HOME</a></li>
+              <li><a href="#">ABOUT ME</a></li>
+              <li><a href="#">PORTFOLIO</a></li>
+              <li><a href="#">CONTACT ME</a></li>
+            </ul>
+          </nav>
+       </div> <!-- .wrapper -->
+    </header>
+
+    <div id="main-banner">
+      <!-- <img src="images/banner.jpg" alt="" /> -->
+      <div class="wrapper">
+        <h1>WE NEED THE TONIC OF</br>WILDNESS</h1>
+        <div class="readMore-button">
+          <a href=""><span>Read more</span></a>
+        </div>
+        <div class="slider-button">
+          <ul>
+            <a href="#"><li></li></a>
+            <a href="#"><li></li></a>
+            <a href="#" class="current"><li></li></a>
+            <a href="#"><li></li></a>
+            <a href="#"><li></li></a>
+          </ul>
+         </div> <!-- .slider-button -->
+      </div>
+    </div><!-- #main-banner -->
+
+    <section id="business">
+      <div class="wrapper">
+        <h2>At the same time that we are earnest to explore & learn all things</h2>
+        <p>
+      Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+        </p>
+         <div class="business-icons">
+          <ul>
+            <li><img src="images/icon-1.png"/></li>
+            <li><img src="images/icon-2.png"/></li>
+            <li><img src="images/icon-3.png"/></li>
+          </ul>
+        </div> <!-- .business-icons -->
+      </div> <!-- .wrapper -->
+    </section> <!-- #busniess section -->
+
+    <section id="quote">
+      <div class="wrapper">
+
+          <h1>Profile image</h1>
+          <h2>DHAVAN</h2>
+          <span><img src="images/copy.png"/></span>
+        <p>
+        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to
+a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting
+        </p>
+      </div> <!-- .wrapper -->
+    </section> <!-- #quote section -->
+
+    <div id="contact">
+      <div class="contact-form">
+        <input type="text" name="name" placeholder="Name">
+        <input type="text" name="email-address" placeholder="email address">
+        <textarea name="message" placeholder="Message"></textarea>
+        <a href=""><img src="images/contact-button.png" /></a>
+      </div>
+    </div>
+
+    <div id="footer">
+      <p>COPYRIGHT &copy; 2016 CSS <a href="">AUTHOR.COM</a></p>
+    </div>
+
+    <!-- JAVASCRIPT -->
+
+    <script   src="https://code.jquery.com/jquery-3.1.0.min.js"   integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s="   crossorigin="anonymous"></script>
+    <script type="text/javascript">
+      $(document).ready(function(){
+
+        $('#menu-button').click(function(){
+          $('header nav').slideToggle('slow', function(){
+            $(this).toggleClass('showMenu');
+          });
+        });
+
+      });
+    </script>
+  </body>
+</html>
